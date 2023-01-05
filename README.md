@@ -76,7 +76,18 @@ The 2nd VM will be the Client
 </p>
 <p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 2: Ensure Connectivity between client and Domain Controller 
+Login to Client-1 using Microsoft Remote Desktop 
+Search for command prompt and open it 
+Ping DC-1's private IP Address (Mine 10.0.0.4)
+Ping -t 10.0.0.4
+Due to the firewall it will request timeout. To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall.
+
+<p>
+<img src="https://i.imgur.com/438mkaE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 </p>
 <br />
 
