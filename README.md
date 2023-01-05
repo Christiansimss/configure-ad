@@ -143,7 +143,7 @@ Select next - Create password
 Select next, follow the prompts and finish up by selecting install. 
 
 <p>
-<img src="https://i.imgur.com/P7KBgCn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Hs2irr3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
