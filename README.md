@@ -90,11 +90,21 @@ Due to the firewall it will request timeout. To fix this, we need to enable ICMP
 
 </p>
 <br />
+Login to DC-1 using Microsoft Remote Desktop
+Start -> Windows Administrative Tools -> Windows Defender Firewall with Advanced Security-Inbound rules. 
+Sort the list by protocols 
+Find Core Networking Diagnostics ICMPv4 and enable these two inbound rules
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mOvHGLG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+<p>
+<img src="https://i.imgur.com/hyHBE9L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
