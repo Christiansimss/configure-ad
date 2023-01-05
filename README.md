@@ -105,6 +105,52 @@ Find Core Networking Diagnostics ICMPv4 and enable these two inbound rules
 </p>
 <p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log back into Client-1 and the Command line will start to ping DC-1 successfully. To end it from Pinging press Control C 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/P7KBgCn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 3: Install Active Directory 
+Log back ito DC-1
+Open Server Manager
+Select "Add roles and features." Follow the prompts.
+At Server Roles, check "Active Directory Domain Services." (Ignore how the picture below that already says "Installed") Then select next Add Features. Select next and finish installing.
+
+<p>
+<img src="https://i.imgur.com/JIwGRkY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/BAAly3j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+At the top right of the Server Manager Dashboard, click on the flag. 
+Select promote this server to a domain controller 
+
+<p>
+<img src="https://i.imgur.com/eFFV0ik.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Select Add a new forest - Root domain name: mydomain.com 
+Select next - Create password 
+Select next, follow the prompts and finish up by selecting install. 
+
+<p>
+<img src="https://i.imgur.com/P7KBgCn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+DC-1 will automatically restart.
+Log back into DC-1 as user: mydomain.com\Azurelabuser
+
+<p>
+<img src="https://i.imgur.com/P7KBgCn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
