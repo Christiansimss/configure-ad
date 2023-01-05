@@ -189,3 +189,67 @@ uncheck all boxes, select next and then select finish
 <img src="https://i.imgur.com/aPbMqQH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+Go to _ADMINS organzational unit -> right click Jack doe -> select properties 
+Click "memember of" tab -> Select Add -> type in domain admins -> Check Names -> OK -> Apply 
+Log out of DC-1 as "Azurelabuser" and log back in as "mydomain.com\jack_admin"
+
+<p>
+<img src="https://i.imgur.com/B7ORMAC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/0QjIOjN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 5: Join Client-1 to your domain (mydomain.com)
+Go back to the Azure portal. 
+GO to Client-1 Virtual Machine 
+On the left hand side select Networking -> select the link next to the NIC -> DNS server -> Custom -> Type in DC-1's private IP address -> save 
+After it is done updating, select restart and select yes
+
+<p>
+<img src="https://i.imgur.com/EhWDCds.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/dwrpc0v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/zsZPhag.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Log back into Client-1 using Remote Desktop as orginal local admin (Azurelabuser) 
+Right click the start menu and select System. 
+On the right hand side, select Rename this PC (advanced) -> Change -> Under Memeber of, select domain -> type my domain.com and select OK 
+Username: mydomain.com\jane_admin 
+Type in password and press OK
+Restart the computer 
+
+<p>
+<img src="https://i.imgur.com/enexEYu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 6: Setup Remote Desktop for non adminstrative users on Client 1 
+Log back into Client-1 
+user mydomain.com\jack_admin
+Right click the start menu and select system
+on the right hand side, select Remote Desktop-> under User Accounts, click on select users that can remotely access this PC -> Select add 
+Type: domain users -> Check Names -> OK. Select OK again.
+
+<p>
+<img src="https://i.imgur.com/Li4BHQx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/DfdDVZN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
