@@ -257,7 +257,7 @@ Type: domain users -> Check Names -> OK. Select OK again.
 Step 7: Create a bunch of additonal users and attempt to log into client-1 with one of the users
 Log back into DC-1 as jack_admin 
 Search for Powershell_ise, right click on it and open administrator 
-At the top left, select new script and paste the contents of the script into it. You can find the script (link to script). 
+At the top left, select new script and paste the contents of the script into it. You can find the script [here](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).. 
 
 <p>
 <img src="https://i.imgur.com/eLgbVan.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
