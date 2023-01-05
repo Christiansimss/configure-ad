@@ -154,3 +154,38 @@ Log back into DC-1 as user: mydomain.com\Azurelabuser
 <img src="https://i.imgur.com/B1AwRDO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+Step 4: Create an Admin and Normal User Account in Active Directory v1.15.8 
+On DC-1, open up Server Manager 
+Click tools at the top right hand side 
+Select Active Diretory Users and Computers. 
+
+<p>
+<img src="https://i.imgur.com/684wsHd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Right click mydomain.com -> New -> Select Organizational Unit (We will be creating 2 folders.)
+Name one _EMPLOYEES and the other _ADMINS
+
+<p>
+<img src="https://i.imgur.com/SCrdZox.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Right click mydomain.com and click refresh to sort the new organizational untis to the top. 
+Go to _ADMINS organzational unit -> right click -> New -> User
+First/Last name: Jack doe 
+User login Jack_admin
+Select next and create a password 
+uncheck all boxes, select next and then select finish 
+
+<p>
+<img src="https://i.imgur.com/a5ZbkIc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/aPbMqQH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
