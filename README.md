@@ -253,3 +253,59 @@ Type: domain users -> Check Names -> OK. Select OK again.
 </p>
 <p>
 <p>
+
+Step 7: Create a bunch of additonal users and attempt to log into client-1 with one of the users
+Log back into DC-1 as jack_admin 
+Search for Powershell_ise, right click on it and open administrator 
+At the top left, select new script and paste the contents of the script into it. You can find the script (link to script). 
+
+<p>
+<img src="https://i.imgur.com/eLgbVan.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/pmihakd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+Click the green arrow button near the top middle to run the script 
+Once the users have been created, go back to Active Directory Users and Computers -> mydomain.com -> _EMPLOYEES
+You will see all the accounts that were created, in here. 
+You can now log into Client-1 with one of the accounts that were created. 
+
+<p>
+<img src="https://i.imgur.com/lCvIjbT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/VKtZ3bk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/gFxArfS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+Log into Client-1 with one of the users that were created (in our instance "baj.kas", password will be Password1)
+
+<p>
+<img src="https://i.imgur.com/cusUgaJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/fCgiapo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+
+Congrats! You have offically implementated on-premises Active Directory and created users within Azure Virtual Machines!
